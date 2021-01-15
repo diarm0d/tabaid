@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template </title>
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=cdnjs.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="owfont-regular.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--Top Right -->
+    <div class="top-right">
+        <div class="weather-container" id="weather-container">
+            <span class="weather-icon" id="weather-icon"><i id="weather-display" class="owf "></i></span>
+            <span class="temp" id="temp">1</span>
+            <span class="weather-degree" id="weather-degree">°</span>
+        <div class="location-container" id="location-container">
+                <span class="location" id="location">Munich</span>
+        </div>
+        </div>
+    </div>
+    <!-- Search Box-->
+    <div id="searchbar">
+        <div class="time-box">
+            <span class="time" id="time"></span>
+            <span class="date" id="date"></span>
+            <span class="status" id="status"></span>
+        </div>
+        <div class="searchbox-wrapper">
+        <div class="dropdown">
+        <button class="dropbtn" id="dropbtn" type="dropdown">
+            <img id="search-icon" src="img/ecosia_icon.png">
+           <!--<i id="search-icon" class="fab fa-google"></i>-->
+            <i class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content" id="dropdown-content">
+            <a id="search-engine-1">Google</a>
+            <a id="search-engine-2">Bing</a>
+            <a id="search-engine-3">Ecosia</a>
+            <a id="search-engine-4">DuckDuckGo</a>
+          </div>
+        </div>
+        <form id="searchbox" action="https://www.google.com/search" method="get" autocomplete="off">
+	      <input id="search" placeholder="Search" type="text" name="q"autofocus required />
+	      <button id="searchbutton" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    </div>
+    <!-- Script  -->
+    <script src="script.js"></script>
+</body>
+</html>
